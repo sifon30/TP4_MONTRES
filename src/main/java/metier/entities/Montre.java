@@ -1,8 +1,19 @@
 package metier.entities;
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name = "MONTRES")
 public class Montre implements Serializable {
+	@Id
+	@Column (name="ID_MONTRE")
+
 	private Long idMontre;
+	@Id
+	@Column (name="NOM_MONTRE")
 	private String nomMontre;
 	private double prix;
 
